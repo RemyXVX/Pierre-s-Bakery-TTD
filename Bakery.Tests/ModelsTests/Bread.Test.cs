@@ -9,8 +9,15 @@ namespace PierreBakes.TestTools
     [TestMethod]
     public void BreadConstructor_CreationOfBread_Bread()
     {
-        Bread newBread = new Bread();
+        Bread newBread = new Bread(1);
         Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+
+    [TestMethod]
+    public void Quantity_BreadQuantity_Int()
+    {
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(1, newBread.QuantityOfBread);
     }
   }
 }
