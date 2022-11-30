@@ -19,5 +19,12 @@ namespace PierreBakes.TestTools
       Bread newBread = new Bread(1);
       Assert.AreEqual(1, newBread.QuantityOfBread);
     }
+
+  [TestMethod]
+    public void Cost_BreadCost_Int()
+    {
+      Bread newBread = new Bread(5);
+      Assert.AreEqual(5, newBread.CostOfBread);
+    }
   }
 }
