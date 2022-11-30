@@ -8,6 +8,7 @@ namespace PierreBakes.Models
     public Bread(int qtyBread)
     {
       QuantityOfBread = qtyBread;
+      CostOfBread = 5;
     }
   }
 
