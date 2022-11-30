@@ -10,6 +10,11 @@ namespace PierreBakes.Models
       QuantityOfBread = qtyBread;
       CostOfBread = 5;
     }
-  }
 
+    public int MultiBread()
+    {
+      int total = QuantityOfBread * CostOfBread;
+      return total;
+    }
+  }
 }

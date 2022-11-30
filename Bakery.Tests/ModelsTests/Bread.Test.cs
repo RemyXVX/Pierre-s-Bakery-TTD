@@ -31,7 +31,7 @@ namespace PierreBakes.TestTools
     public void Sum_CostOfMultipleBread_Int()
     {
       Bread newBread = new Bread(2);
-      Assert.AreEqual(0, newBread.MultiBread());
+      Assert.AreEqual(10, newBread.MultiBread());
     }
   }
 }
