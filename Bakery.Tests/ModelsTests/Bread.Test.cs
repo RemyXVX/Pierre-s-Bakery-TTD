@@ -33,5 +33,12 @@ namespace PierreBakes.TestTools
       Bread newBread = new Bread(2);
       Assert.AreEqual(10, newBread.MultiBread());
     }
+
+    [TestMethod]
+    public void Free_BuyTwoExtraOne_Int()
+    {
+      Bread newBread = new Bread(3);
+      Assert.AreEqual(10, newBread.MultiBread());
+    }
   }
 }
