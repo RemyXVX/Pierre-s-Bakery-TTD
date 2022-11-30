@@ -9,8 +9,8 @@ namespace PierreBakes.TestTools
     [TestMethod]
     public void BreadConstructor_CreationOfBread_Bread()
     {
-        Bread newBread = new Bread(1);
-        Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod]
@@ -25,6 +25,13 @@ namespace PierreBakes.TestTools
     {
       Bread newBread = new Bread(5);
       Assert.AreEqual(5, newBread.CostOfBread);
+    }
+
+    [TestMethod]
+    public void Sum_CostOfMultipleBread_Int()
+    {
+      Bread newBread = new Bread(2);
+      Assert.AreEqual(0, newBread.MultiBread());
     }
   }
 }
