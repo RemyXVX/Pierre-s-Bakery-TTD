@@ -13,7 +13,18 @@ namespace PierreBakes.Models
 
     public int MultiBread()
     {
-      int total = QuantityOfBread * CostOfBread;
+      int total;
+      int freeExtraBread = (QuantityOfBread - (QuantityOfBread % 3)) / 3 * CostOfBread;
+
+      if (QuantityOfBread >= 3) 
+      {
+        total = (QuantityOfBread * CostOfBread) - freeExtraBread;
+      }
+      else 
+      {
+        total = QuantityOfBread * CostOfBread;
+      }
+
       return total;
     }
   }
