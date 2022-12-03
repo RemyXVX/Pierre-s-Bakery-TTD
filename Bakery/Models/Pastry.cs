@@ -13,7 +13,18 @@ namespace PierreBakes.Models
 
   public int MultiPastry()
   {
-    int total = CostOfPastry * QuantityOfPastry;
+    int total;
+    int halfPastryOff = (QuantityOfPastry - (QuantityOfPastry % 3)) / 3;
+
+    if (QuantityOfPastry >= 3)
+    {
+      total = (QuantityOfPastry * CostOfPastry) - halfPastryOff;
+    }
+    else
+    {
+      total = QuantityOfPastry * CostOfPastry;
+    }
+
     return total;
   }
 

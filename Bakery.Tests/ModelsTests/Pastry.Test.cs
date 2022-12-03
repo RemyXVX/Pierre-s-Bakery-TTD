@@ -34,5 +34,12 @@ namespace PierreBakes.Tests
       Assert.AreEqual(4, newPastry.MultiPastry());
     }
 
+    [TestMethod]
+    public void Half_BuyTwoExtraOne_Int()
+    {
+      Pastry newPastry = new Pastry(3);
+      Assert.AreEqual(5, newPastry.MultiPastry());
+    }
+
   }
 }
