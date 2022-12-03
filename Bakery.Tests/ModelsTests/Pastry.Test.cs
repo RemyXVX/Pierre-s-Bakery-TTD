@@ -27,5 +27,12 @@ namespace PierreBakes.Tests
       Assert.AreEqual(2, newPastry.CostOfPastry);
     }
 
+    [TestMethod]
+    public void Sum_CostOfMultiplePastry_Int()
+    {
+      Pastry newPastry = new Pastry(2);
+      Assert.AreEqual(4, newPastry.MultiPastry());
+    }
+
   }
 }

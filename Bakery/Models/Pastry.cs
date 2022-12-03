@@ -11,5 +11,11 @@ namespace PierreBakes.Models
     CostOfPastry = 2;
   }
 
+  public int MultiPastry()
+  {
+    int total = CostOfPastry * QuantityOfPastry;
+    return total;
+  }
+
   }
 }
