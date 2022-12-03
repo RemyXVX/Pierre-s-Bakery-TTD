@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierreBakes.Models;
 
-namespace PierreBakes.TestTools
+namespace PierreBakes.Tests
 {
   [TestClass]
   public class BreadTests

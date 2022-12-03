@@ -4,5 +4,11 @@ namespace PierreBakes.Models
   {
     public int CostOfPastry {get; set;}
     public int QuantityOfPastry {get; set;}
+  
+  public Pastry (int qtyPastry)
+  {
+    QuantityOfPastry = qtyPastry;
+  }
+  
   }
 }
