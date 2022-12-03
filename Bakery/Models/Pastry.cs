@@ -8,7 +8,8 @@ namespace PierreBakes.Models
   public Pastry (int qtyPastry)
   {
     QuantityOfPastry = qtyPastry;
+    CostOfPastry = 2;
   }
-  
+
   }
 }

@@ -20,5 +20,12 @@ namespace PierreBakes.Tests
       Assert.AreEqual(1, newPastry.QuantityOfPastry);
     }
 
+    [TestMethod]
+    public void Cost_PastryCost_Int()
+    {
+      Pastry newPastry = new Pastry(1);
+      Assert.AreEqual(2, newPastry.CostOfPastry);
+    }
+
   }
 }
