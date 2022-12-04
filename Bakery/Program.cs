@@ -43,7 +43,6 @@ namespace PierreBakes
         Console.WriteLine("");
 
         Console.WriteLine("How many loafs of bread are we getting?");
-        int QuantityOfBread;
         int breadInput = int.Parse(Console.ReadLine());
         if (breadInput >= 1)
         {
@@ -51,9 +50,9 @@ namespace PierreBakes
         }
         else
         {
-          Console.WriteLine("Yo, I don't have all day!")
+          Console.WriteLine("Yo, I don't have all day!");
         }
-        Bread newBread = new Bread(QuantityOfBread);
+        Bread newBread = new Bread(breadInput);
         int loafTotal = newBread.MultiBread();
         Console.WriteLine("Bread Total: $" + loafTotal);
 
@@ -62,7 +61,6 @@ namespace PierreBakes
         Console.WriteLine("");
 
         Console.WriteLine("How many pastryies are we getting?");
-        int QuantityOfPastry;
         int pastryInput = int.Parse(Console.ReadLine());
         if (pastryInput >= 1)
         {
@@ -70,9 +68,9 @@ namespace PierreBakes
         }
         else
         {
-          Console.WriteLine("Yo, I don't have all day!")
+          Console.WriteLine("Yo, I don't have all day!");
         }
-        Pastry newPastry = new Pastry (QuantityOfPastry);
+        Pastry newPastry = new Pastry (pastryInput);
         int pastryTotal = newPastry.MultiPastry();
         Console.WriteLine("Pastry Total: $" + pastryTotal);
       
