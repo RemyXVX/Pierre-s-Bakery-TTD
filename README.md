@@ -44,7 +44,7 @@ git clone "[https://github.com/RemyXVX/Pierre-s-Bakery-TTD.git]"
 <big>I would recommend also setting up work envirnoment after cloning by:</big>
 
 ```
-dotnet restore
+dotnet build
 ```
 
 <big>Afterwards:</big>
